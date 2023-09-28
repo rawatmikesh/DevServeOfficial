@@ -1,0 +1,57 @@
+/* Style for the header section */
+.header {
+    padding: 40px; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Style for the header content */
+.header-content {
+    text-align: left;
+    width: 50%;
+
+}
+
+/* Style for the heading */
+.header h1 {
+    font-size: 32px; 
+    margin-bottom: 10px; 
+}
+
+/* Style for the paragraph */
+.header p {
+    font-size: 18px; 
+}
+
+/* Style for the header image */
+.header-image img {
+    max-width: 25rem; 
+    height: auto; 
+    margin-top: 20px; 
+}
+
+.btn-header {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: block;
+    }
+    .header-content {
+        text-align: left;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+    .header-image img {
+        width: 15rem;
+        margin-top: 80px; 
+    }
+    .header p {
+        font-size: 18px; 
+        /* text-align: justify; */
+    }
+}
