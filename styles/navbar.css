@@ -5,13 +5,18 @@
     align-items: center;
     background-color: #fff;
     color: #000;
+    top: 0;
+    z-index: 1;
+    position: sticky;
     padding: 10px 20px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    box-shadow: var(--box-shadow);
+    /* opacity: 0.9; */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+
 }
 
 .nav-links li {
@@ -21,6 +26,12 @@
 .nav-links a {
     text-decoration: none;
     color: #000;
+    transition: 0.2s all ease-in-out;
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    color: var(--main-color);
 }
 
 .logo {
@@ -48,18 +59,20 @@
 
 /* Style for the button */
 .my-button {
-    background-color: #007bff; /* Blue background color */
-    color: #fff; /* White text color */
-    padding: 10px 20px; /* Padding inside the button */
-    border: none; /* Remove button border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    font-size: 16px; /* Font size */
+    background-color: var(--main-color);
+    box-shadow: var(--button-shadow);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s all ease-in-out;
 }
 
 /* Hover effect */
 .my-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: var(--main-hover);
 }
 
 
