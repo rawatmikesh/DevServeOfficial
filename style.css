@@ -14,6 +14,11 @@ body {
     background-color: #c5ddf7;
 }
 
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
 :root {
     --main-color: #007bff;
     --main-hover: #0056b3;
